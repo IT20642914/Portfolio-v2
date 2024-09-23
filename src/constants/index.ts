@@ -18,8 +18,9 @@ import trainManagementImage3 from "../assets/projects/train3.png"
 import trainManagementImage4 from "../assets/projects/train4.png"
 import trainManagementImage5 from "../assets/projects/train5.png"
 import niroggiImage from "../assets/projects/niroggi.png"
-import centralNumberPoolImage from "../assets/projects/centralNumberPool.png"
 import faceRecognizerImage from "../assets/projects/faceRecognizer.png"
+
+import defaltImage from "../assets/projects/default.jpg"
 
  const education = [
   {
@@ -157,7 +158,7 @@ const testimonials = [
         "Viu is a TV channel streaming application where we were involved in backend implementation using microservices architecture. We implemented 5 microservices using Spring Boot, ensuring efficient and scalable performance. The project also involved using AWS SQS for handling messaging services, MongoDB for storing unstructured data, and MySQL for managing relational data.",
       tags: ["Java Spring Boot", "AWS SQS", "MongoDB", "MySQL", "Microservices Architecture", "GitLab"],
       Category: "Company Project",
-      images: [/* Add relevant images here if available */]
+      images: [defaltImage]
   },
   {
     title: "Central Number Pool",
@@ -165,7 +166,7 @@ const testimonials = [
       "A backend service that includes number generation and search services, as well as a scheduler. The number generation service creates a range of numbers based on requirements, which can then be moved from the pre-pool to the live pool.",
     tags: ["Java", "Spring Boot", "DynamoDB"],
     Category: "Company Project",
-    images: [centralNumberPoolImage]
+    images: [defaltImage]
   },
   {
     title: "Transportation Web Application",
@@ -187,33 +188,33 @@ const testimonials = [
 ];
 
 
-//  const certifications = [
-//   {
-//     name: "Frontend Developer (React)",
-//     issuer: "HackerRank",
-//     date: "2023-NOV-30",
-//     description: "It covers topics like React, CSS, and JavaScript.",
-//     link: "https://www.hackerrank.com/certificates/9c19847bd7dd",
-//     image: react, // replace with the actual path or link to the certificate image
-//   },
-//   {
-//     name: "Java (Basic)",
-//     issuer: "HackerRank",
-//     date: "2023-NOV-30",
-//     description: "It covers basic topics in Java language such as data structures, inheritance, exception handling.",
-//     link: "https://www.hackerrank.com/certificates/2c4c1c7186a2",
-//     image: java, // replace with the actual path or link to the certificate image
-//   },
-//   {
-//     name: "SQL (Basic)",
-//     issuer: "HackerRank",
-//     date: "2023-NOV-30",
-//     description: "It includes simple queries, relationships, and aggregators.",
-//     link: "https://www.hackerrank.com/certificates/ef57da8b0bc8",
-//     image: sql, // replace with the actual path or link to the certificate image
-//   },
-// ];
+ const certifications = [
+  {
+    name: "Frontend Developer (React)",
+    issuer: "HackerRank",
+    date: "2023-NOV-30",
+    description: "It covers topics like React, CSS, and JavaScript.",
+    link: "https://www.hackerrank.com/certificates/9c19847bd7dd",
+    image: [], // replace with the actual path or link to the certificate image
+  },
+  {
+    name: "Java (Basic)",
+    issuer: "HackerRank",
+    date: "2023-NOV-30",
+    description: "It covers basic topics in Java language such as data structures, inheritance, exception handling.",
+    link: "https://www.hackerrank.com/certificates/2c4c1c7186a2",
+    image: [], // replace with the actual path or link to the certificate image
+  },
+  {
+    name: "SQL (Basic)",
+    issuer: "HackerRank",
+    date: "2023-NOV-30",
+    description: "It includes simple queries, relationships, and aggregators.",
+    link: "https://www.hackerrank.com/certificates/ef57da8b0bc8",
+    image: [], // replace with the actual path or link to the certificate image
+  },
+];
 
 
 
-export { education,experiences,projects, testimonials,  };
+export { education,experiences,projects, certifications,testimonials,  };

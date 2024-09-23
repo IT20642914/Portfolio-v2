@@ -41,6 +41,8 @@ import nextjsIcon from "../../assets/nextjs.svg";
 import nestjsIcon from "../../assets/nestjs.svg";
 import springBootIcon from "../../assets/spring-boot.svg";
 import pythonIcon from "../../assets/python.svg";
+import { Certifications } from "../Certifications/Certifications";
+import { ActivitiesAndAchievements } from "../ActivitiesAndAchievements/ActivitiesAndAchievements";
 export function Main() {
   const iconsArray = [
     {
@@ -347,6 +349,8 @@ export function Main() {
       <Work></Work>
       <Education></Education>
       <Project></Project>
+      <Certifications/>
+      <ActivitiesAndAchievements/>
       <Contact></Contact>
     </Container>
   );
