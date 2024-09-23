@@ -12,12 +12,12 @@ import DramaCertificate2 from "../../assets/Certificates/nodeJs.png";
 export function ActivitiesAndAchievements() {
   // Points for extracurricular activities and achievements
   const points = [
+    "Represented SLIIT University for global exposure at BMICH for final year research.",
     "Deputy Head Prefect of the school in 2018.",
     "Junior and Senior Prefect from 2015-2017",
     "Participated in cadets",
     "Played cricket, football, and athletics at school.",
     "Participated in the school drama team.",
-    "Represented SLIIT University for global exposure at BMICH for final year research.",
   ];
 
   // List of certificate images (Replace with actual certificate images)
