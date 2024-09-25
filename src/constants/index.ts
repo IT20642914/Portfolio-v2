@@ -149,7 +149,7 @@ const testimonials = [
     githubLink: "https://github.com/IT20642914/React-course-pr2.git",
     liveLink: "https://react-course-pr2.vercel.app/",
     Category: "React Course Project",
-    images: [ReactCourseProject2Img1, ReactCourseProject2Img2,ReactCourseProject2Img3,ReactCourseProject2Img4], // Add the correct image imports here
+    images: [ReactCourseProject2Img1, ReactCourseProject2Img2,ReactCourseProject2Img3,ReactCourseProject2Img4], 
 },
   {
     title: "React Essentials Website",
