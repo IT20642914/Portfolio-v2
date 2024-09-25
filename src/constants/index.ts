@@ -147,7 +147,7 @@ const testimonials = [
       "A Tic-Tac-Toe game built as part of a React course, showcasing state management, component lifecycle, and interactivity in React. It was implemented using Vite for fast development and optimized performance.",
     tags: ["React", "Vite", "CSS", "JavaScript"],
     githubLink: "https://github.com/IT20642914/React-course-pr2.git",
-    liveLink: "https://react-course-pr2-7ul3.vercel.app/",
+    liveLink: "https://react-course-pr2.vercel.app/",
     Category: "React Course Project",
     images: [ReactCourseProject2Img1, ReactCourseProject2Img2,ReactCourseProject2Img3], // Add the correct image imports here
 },
