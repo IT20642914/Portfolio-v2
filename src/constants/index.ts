@@ -22,6 +22,10 @@ import faceRecognizerImage from "../assets/projects/faceRecognizer.png"
 import ReactCourseProject1Img1 from "../assets/projects/ReactCoursePR1IMG1.png"
 import ReactCourseProject1Img2 from "../assets/projects/ReactCoursePR1IMG2.png"
 
+import ReactCourseProject2Img1 from "../assets/projects/ReactCoursePR2IMG1.png"
+import ReactCourseProject2Img2 from "../assets/projects/ReactCoursePR2IMG2.png"
+import ReactCourseProject2Img3 from "../assets/projects/ReactCoursePR2IMG3.png"
+
 import defaltImage from "../assets/projects/default.jpg"
 
  const education = [
@@ -138,13 +142,23 @@ const testimonials = [
     images: [SeConsultantsImage1, SeConsultantsImage2, SeConsultantsImage3,SeConsultantsImage4,SeConsultantsImage5] 
   },
   {
+    title: "Tic-Tac-Toe Game",
+    description:
+      "A Tic-Tac-Toe game built as part of a React course, showcasing state management, component lifecycle, and interactivity in React. It was implemented using Vite for fast development and optimized performance.",
+    tags: ["React", "Vite", "CSS", "JavaScript"],
+    githubLink: "https://github.com/IT20642914/React-course-pr2.git",
+    liveLink: "https://react-course-pr2-7ul3.vercel.app/",
+    Category: "React Course Project",
+    images: [ReactCourseProject2Img1, ReactCourseProject2Img2,ReactCourseProject2Img3], // Add the correct image imports here
+},
+  {
     title: "React Essentials Website",
     description:
       "A React project built as part of a React course, showcasing essential concepts of React development. It was configured using Vite for optimized development and faster build processes.",
     tags: ["React", "Vite", "CSS", "JavaScript"],
     githubLink: "https://github.com/IT20642914/React-course-pr1.git",
     liveLink: "https://react-course-pr1.vercel.app/",
-    Category: "Course Project ",
+    Category: "React Course Project ",
     images: [ReactCourseProject1Img1, ReactCourseProject1Img2],
   },
   {
