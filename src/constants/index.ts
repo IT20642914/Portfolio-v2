@@ -19,6 +19,8 @@ import trainManagementImage4 from "../assets/projects/train4.png"
 import trainManagementImage5 from "../assets/projects/train5.png"
 import niroggiImage from "../assets/projects/niroggi.png"
 import faceRecognizerImage from "../assets/projects/faceRecognizer.png"
+import ReactCourseProject1Img1 from "../assets/projects/ReactCoursePR1IMG1.png"
+import ReactCourseProject1Img2 from "../assets/projects/ReactCoursePR1IMG2.png"
 
 import defaltImage from "../assets/projects/default.jpg"
 
@@ -134,6 +136,16 @@ const testimonials = [
     liveLink: "https://seclk.up.railway.app/",
     Category:"FreeLance Project",
     images: [SeConsultantsImage1, SeConsultantsImage2, SeConsultantsImage3,SeConsultantsImage4,SeConsultantsImage5] 
+  },
+  {
+    title: "React Essentials Website",
+    description:
+      "A React project built as part of a React course, showcasing essential concepts of React development. It was configured using Vite for optimized development and faster build processes.",
+    tags: ["React", "Vite", "CSS", "JavaScript"],
+    githubLink: "https://github.com/IT20642914/React-course-pr1.git",
+    liveLink: "https://react-course-pr1.vercel.app/",
+    Category: "Course Project ",
+    images: [ReactCourseProject1Img1, ReactCourseProject1Img2],
   },
   {
     title: "Train Ticket Management System",
