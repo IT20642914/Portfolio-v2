@@ -22,10 +22,10 @@ import faceRecognizerImage from "../assets/projects/faceRecognizer.png"
 import ReactCourseProject1Img1 from "../assets/projects/ReactCoursePR1IMG1.png"
 import ReactCourseProject1Img2 from "../assets/projects/ReactCoursePR1IMG2.png"
 
-import ReactCourseProject2Img1 from "../assets/projects/ReactCoursePR2IMG1.png"
-import ReactCourseProject2Img2 from "../assets/projects/ReactCoursePR2IMG2.png"
-import ReactCourseProject2Img3 from "../assets/projects/ReactCoursePR2IMG3.png"
-
+import ReactCourseProject2Img1 from "../assets/projects/ReactCourseProject2Img1.png"
+import ReactCourseProject2Img2 from "../assets/projects/ReactCourseProject2Img2.png"
+import ReactCourseProject2Img3 from "../assets/projects/ReactCourseProject2Img3.png"
+import ReactCourseProject2Img4 from "../assets/projects/ReactCourseProject2Img4.png"
 import defaltImage from "../assets/projects/default.jpg"
 
  const education = [
@@ -149,7 +149,7 @@ const testimonials = [
     githubLink: "https://github.com/IT20642914/React-course-pr2.git",
     liveLink: "https://react-course-pr2.vercel.app/",
     Category: "React Course Project",
-    images: [ReactCourseProject2Img1, ReactCourseProject2Img2,ReactCourseProject2Img3], // Add the correct image imports here
+    images: [ReactCourseProject2Img1, ReactCourseProject2Img2,ReactCourseProject2Img3,ReactCourseProject2Img4], // Add the correct image imports here
 },
   {
     title: "React Essentials Website",
