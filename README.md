@@ -1,6 +1,7 @@
 # Portfolio of Avishka Chanaka Gamage
 
-<img src ="https://github.com/CodeVinayak/CodeVinayak/blob/5920a79f4c5977332a67caf91125241cf0fc46b5/www.vinayaksingh.in.png" />
+![image](https://github.com/user-attachments/assets/017d0d4c-6464-45c6-ab3d-603bfa4f41c9)
+
  
 This project was created with CRA (Create React App)
 
