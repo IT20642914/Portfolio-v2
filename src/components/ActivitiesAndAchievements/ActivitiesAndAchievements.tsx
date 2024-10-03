@@ -53,6 +53,7 @@ export function ActivitiesAndAchievements() {
 
       {/* Swiper Grid of Certificate Images */}
       <Swiper
+        loop={true}
         slidesPerView={3}
         spaceBetween={30}
         pagination={{ clickable: true }}
