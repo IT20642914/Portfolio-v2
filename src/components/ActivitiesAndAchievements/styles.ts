@@ -61,6 +61,7 @@ export const Container = styled.section`
 
     img {
       max-width: 100%;
+      max-height: 45rem;
       height: auto;
       border-radius: 0.5rem;
     }

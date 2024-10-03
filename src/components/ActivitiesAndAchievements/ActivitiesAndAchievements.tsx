@@ -8,6 +8,17 @@ import { Pagination, Autoplay } from "swiper/modules";
 
 import DramaCertificate from "../../assets/Certificates/java.png";
 import DramaCertificate2 from "../../assets/Certificates/nodeJs.png";
+import BMICH from "../../assets/Achivements/BMICH.jpg";
+import Cadet from "../../assets/Achivements/cadet.jpg";
+import Cadet2 from "../../assets/Achivements/cadet2.jpg";
+import sliit from "../../assets/Achivements/sliit.jpg";
+import sliitColors from "../../assets/Achivements/sliitColors.jpg";
+import cricket1 from "../../assets/Achivements/Cricket1.jpg";
+import cricket2 from "../../assets/Achivements/Cricket2.jpg";
+import cricket3 from "../../assets/Achivements/Cricket3.jpg";
+import dramma from "../../assets/Achivements/dramma.jpg";
+import dramma2 from "../../assets/Achivements/dramma2.jpg";
+import dramma3 from "../../assets/Achivements/dramma3.jpg";
 
 export function ActivitiesAndAchievements() {
   // Points for extracurricular activities and achievements
@@ -22,9 +33,9 @@ export function ActivitiesAndAchievements() {
 
   // List of certificate images (Replace with actual certificate images)
   const certificateImages: string[] = [
-    DramaCertificate, DramaCertificate2, DramaCertificate, DramaCertificate2,
-    DramaCertificate2, DramaCertificate, DramaCertificate, DramaCertificate,
-    DramaCertificate, DramaCertificate2,
+    sliit,sliitColors,BMICH,Cadet,Cadet2,dramma2,
+    cricket1,cricket2,cricket3,dramma,dramma3, DramaCertificate2, DramaCertificate, DramaCertificate2,
+ 
   ];
 
   return (

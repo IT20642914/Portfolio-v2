@@ -26,6 +26,8 @@ import ReactCourseProject2Img1 from "../assets/projects/ReactCourseProject2Img1.
 import ReactCourseProject2Img2 from "../assets/projects/ReactCourseProject2Img2.png"
 import ReactCourseProject2Img3 from "../assets/projects/ReactCourseProject2Img3.png"
 import ReactCourseProject2Img4 from "../assets/projects/ReactCourseProject2Img4.png"
+import ReactCourseProject6Img1 from "../assets/projects/ReactCoursePR6IMG1.png"
+import ReactCourseProject6Img2 from "../assets/projects/ReactCoursePR6IMG2.png"
 import defaltImage from "../assets/projects/default.jpg"
 
  const education = [
@@ -151,6 +153,16 @@ const testimonials = [
     Category: "React Course Project",
     images: [ReactCourseProject2Img1, ReactCourseProject2Img2,ReactCourseProject2Img3,ReactCourseProject2Img4], 
 },
+  {
+    title: "React Quiz App",
+    description:
+      "This project is a simple Quiz Application built with React as part of a React course and deployed using Vercel. The app focuses on state management, components, and hooks. Users are presented with a set of questions and must answer them within the given time limit. At the end of the quiz, a summary of the user's performance is shown, including correct, incorrect, and skipped answers.",
+    tags: ["React", "Vite", "CSS", "JavaScript"],
+    githubLink: "https://github.com/IT20642914/React-course-pr6",
+    liveLink: "https://react-course-pr6.vercel.app/",
+    Category: "React Course Project",
+    images: [ReactCourseProject6Img1, ReactCourseProject6Img2, ], 
+  },
   {
     title: "React Essentials Website",
     description:

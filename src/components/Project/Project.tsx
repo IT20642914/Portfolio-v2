@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { SetStateAction, useState } from "react";
 import { Container } from "./styles";
 import githubIcon from "../../assets/github.svg";
 import LiveIcon from "../../assets/live-svgrepo-com.svg";
@@ -15,6 +15,14 @@ export function Project() {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [modalImage, setModalImage] = useState("");
   const [modalProjectIndex, setModalProjectIndex] = useState(0);
+
+  // State to track whether to show all projects or only 8
+  const [showAll, setShowAll] = useState(false);
+
+  // Function to handle showing all projects
+  const handleToggleShowAll = () => {
+    setShowAll((prevShowAll) => !prevShowAll);
+  };
 
   // Function to handle next image for project cards
   const handleNextImage = (index: number) => {
@@ -38,7 +46,7 @@ export function Project() {
   };
 
   // Function to open modal
-  const handleOpenModal = (image: string, index: number) => {
+  const handleOpenModal = (image: SetStateAction<string>, index: SetStateAction<number>) => {
     setModalImage(image);
     setModalProjectIndex(index);
     setIsModalOpen(true);
@@ -52,7 +60,9 @@ export function Project() {
 
   // Function to handle next image in modal
   const handleNextImageModal = () => {
-    const nextIndex = (currentImageIndex[modalProjectIndex] + 1) % projects[modalProjectIndex].images.length;
+    const nextIndex =
+      (currentImageIndex[modalProjectIndex] + 1) %
+      projects[modalProjectIndex].images.length;
     setCurrentImageIndex((prev) =>
       prev.map((imgIndex, i) =>
         i === modalProjectIndex ? nextIndex : imgIndex
@@ -64,7 +74,8 @@ export function Project() {
   // Function to handle previous image in modal
   const handlePrevImageModal = () => {
     const prevIndex =
-      (currentImageIndex[modalProjectIndex] - 1 + projects[modalProjectIndex].images.length) %
+      (currentImageIndex[modalProjectIndex] - 1 +
+        projects[modalProjectIndex].images.length) %
       projects[modalProjectIndex].images.length;
     setCurrentImageIndex((prev) =>
       prev.map((imgIndex, i) =>
@@ -74,11 +85,14 @@ export function Project() {
     setModalImage(projects[modalProjectIndex].images[prevIndex]);
   };
 
+  // Limit the projects displayed based on `showAll` state
+  const displayedProjects = showAll ? projects : projects.slice(0, 6);
+
   return (
     <Container id="project">
       <h2>My Projects</h2>
       <div className="projects">
-        {projects.map((project, index) => (
+        {displayedProjects.map((project, index) => (
           <ScrollAnimation
             animateIn="fadeInUp"
             animateOnce={true}
@@ -86,9 +100,9 @@ export function Project() {
             className="project"
           >
             <header>
-              <div style={{display:"-ms-grid"}}>
-              <h3 className="Project-title">{project.title}</h3>
-              <p className="Project-category">{project.Category}</p>
+              <div style={{ display: "-ms-grid" }}>
+                <h3 className="Project-title">{project.title}</h3>
+                <p className="Project-category">{project.Category}</p>
               </div>
               <div className="project-links">
                 {project.githubLink && (
@@ -96,13 +110,12 @@ export function Project() {
                     <img src={githubIcon} alt="GitHub" />
                   </a>
                 )}
-                 {project.liveLink && (
+                {project.liveLink && (
                   <a href={project.liveLink} target="_blank" rel="noreferrer">
                     <img src={LiveIcon} alt="LiveIcon" />
                   </a>
                 )}
               </div>
-              
             </header>
 
             <div className="image-container">
@@ -113,16 +126,18 @@ export function Project() {
               <div className="image-controls">
                 <button onClick={() => handlePrevImage(index)}>Prev</button>
                 <button
-                className="view-button"
-                onClick={() =>
-                  handleOpenModal(project.images[currentImageIndex[index]], index)
-                }
-              >
-                View
-              </button>
+                  className="view-button"
+                  onClick={() =>
+                    handleOpenModal(
+                      project.images[currentImageIndex[index]],
+                      index
+                    )
+                  }
+                >
+                  View
+                </button>
                 <button onClick={() => handleNextImage(index)}>Next</button>
               </div>
-             
             </div>
 
             <p>{project.description}</p>
@@ -138,6 +153,13 @@ export function Project() {
         ))}
       </div>
 
+      {/* Show "View All" or "Show Less" button */}
+      <div className="show-all-container">
+        <button onClick={handleToggleShowAll}>
+          {showAll ? "Show Less" : "View All Projects"}
+        </button>
+      </div>
+
       {/* Full-screen modal for viewing images */}
       {isModalOpen && (
         <div className="modal" onClick={handleCloseModal}>
@@ -147,8 +169,12 @@ export function Project() {
             </span>
             <img src={modalImage} alt="Full view" />
             <div className="image-controls">
-              <button className="view-button" onClick={handlePrevImageModal}>Prev</button>
-              <button className="view-button" onClick={handleNextImageModal}>Next</button>
+              <button className="view-button" onClick={handlePrevImageModal}>
+                Prev
+              </button>
+              <button className="view-button" onClick={handleNextImageModal}>
+                Next
+              </button>
             </div>
           </div>
         </div>

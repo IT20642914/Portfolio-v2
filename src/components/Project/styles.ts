@@ -238,4 +238,25 @@ export const Container = styled.section`
       }
     }
   }
+    .show-all-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.show-all-container button {
+  background-color: #4caf50;
+  color: white;
+  padding: 0.75rem 5.5rem;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.show-all-container button:hover {
+  background-color: #45a049;
+}
+
 `;
