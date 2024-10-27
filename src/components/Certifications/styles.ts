@@ -93,7 +93,7 @@ export const Container = styled.section`
     align-items: center;
 
     .modal-content {
-      background-color: #fff;
+      background-color: rgba(99,99, 99, 0.6);
       padding: 2rem;
       border-radius: 0.5rem;
       max-width: 600px;

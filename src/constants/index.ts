@@ -42,11 +42,12 @@ import defaltImage from "../assets/projects/default.jpg"
     ],
   },
   {
-    degree: "G.C.E. Advanced Level",
-    institution: "Dudley Senanayake Central College, Tholangamuwa",
+    degree: "G.C.E. Advanced Level - Dudley Senanayake Central College, Tholangamuwa  ",
+    institution: " Z-Score - 0.7844 ",
     date: "2011 - 2018",
     icon: school,
     points: [
+      "Selected for computer Science university of jaffna",
       "Combined Mathematics - C",
       "Physics - C",
       "Chemistry - C",
