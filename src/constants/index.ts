@@ -4,6 +4,7 @@ import school from "../assets/company/school.png";
 import tecciance from "../assets/company/tecciance.png";
 import acentura from "../assets/company/acentura.png";
 import digiratina from "../assets/company/digiratina.png";
+import soniclabs from "../assets/company/soniclabs.jpg";
 
 import masTransportation from "../assets/projects/mas-transportation.png";
 import SeConsultantsImage1 from "../assets/projects/sec1.png";
@@ -35,7 +36,7 @@ import defaltImage from "../assets/projects/default.jpg"
     degree: "BSc (Hons) in Information Technology Specialising in Software Engineering",
     institution: "Sri Lanka Institute of Information Technology, Malabe",
     date: "2020 - 2024",
-    icon: sliit,
+    icon: sliit,   
     points: [
       "Graduated with honors.",
       "Specialized in Software Engineering.",
@@ -57,11 +58,29 @@ import defaltImage from "../assets/projects/default.jpg"
 
 const experiences = [
   {
+    title: "Software Engineer",
+    company_name: "Sonic Labs",
+    icon: soniclabs, // make sure to define this icon
+    iconBg: "#383E56",
+    date: "November 2024 - Present",
+    points: [
+      "Working directly with UK clients on full-stack projects using .NET Core and React.",
+      "Built and maintained a multi-tenant admin portal with Azure services and Azure Functions.",
+      "Managed application deployment and resource scaling through Azure infrastructure.",
+      "Integrated Microsoft Graph API and implemented OAuth 2.0 for secure authentication.",
+      "Collaborated with design teams to ensure creative and user-friendly UI/UX.",
+      "Led project planning sessions and requirement discussions with clients.",
+      "Handled project handovers and mentored maintenance teams for smooth transitions.",
+      "Participated actively in client meetings, ensuring alignment with deadlines and expectations.",
+      "Utilized Azure Functions for scalable background processing and event-driven operations."
+    ],
+  },
+  {
     title: "Associate Software Engineer",
     company_name: "Tecciance",
     icon: tecciance,
-    iconBg: "#383E56",
-    date: "April 2023 - Present",
+    iconBg: "#E6DEDD",
+    date: "April 2023 - September 2024",
     points: [
       "Integrated Zoom APIs for access tokens, meeting records, and webhook notifications.",
       "Utilized AWS services to enhance data management and processing.",
@@ -91,7 +110,7 @@ const experiences = [
     title: "Software Engineering Intern",
     company_name: "Digiratina Technology Solutions Pvt. Ltd.",
     icon: digiratina,
-    iconBg: "#383E56",
+    iconBg: "#E6DEDD",
     date: "September 2022 - April 2023",
     points: [
       "Improved performance and scalability of existing APIs.",

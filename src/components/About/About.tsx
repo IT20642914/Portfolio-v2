@@ -26,6 +26,10 @@ import nextjsIcon from "../../assets/nextjs.svg";
 import nestjsIcon from "../../assets/nestjs.svg";
 import springBootIcon from "../../assets/spring-boot.svg";
 import pythonIcon from "../../assets/python.svg";
+import NetCore from "../../assets/NETcore.svg";
+import Azure from "../../assets/Azure.svg";
+
+
 import ScrollAnimation from "react-animate-on-scroll";
 
 const frontendSkills = [
@@ -44,7 +48,8 @@ const backendSkills = [
   { src: nestjsIcon, alt: "Nest.js" },
   { src: java, alt: "Java" },
   { src: springBootIcon, alt: "Spring Boot" },
-  { src: pythonIcon, alt: "Python" }
+  { src: pythonIcon, alt: "Python" },
+  { src: NetCore, alt: "NET Core" }
 ];
 
 const databaseSkills = [
@@ -61,7 +66,10 @@ const toolsSkills = [
   { src: awsIcon, alt: "AWS" },
   { src: dockerIcon, alt: "Docker" },
   { src: kubernetesIcon, alt: "Kubernetes" },
-  { src: jenkinsIcon, alt: "Jenkins" }
+  { src: jenkinsIcon, alt: "Jenkins" },
+  { src: Azure, alt: "Azure" }
+
+  
 ];
 
 const createSkillElements = (skills: any[], delayOffset: number) => (
@@ -88,17 +96,17 @@ export function About() {
         </ScrollAnimation>
         <ScrollAnimation animateIn="fadeInLeft" delay={0.1 * 1000}>
           <p>
-            Innovative and skilled software engineer with a solid foundation in information technology and a focus on web and mobile application development. Highly proficient in JavaScript (React, Next.js, Node.js, and TypeScript) and Java (Spring Boot), with a proven track record of successfully managing complex projects and integrating diverse APIs.
+          Innovative and skilled Software Engineer with a solid foundation in information technology and a strong focus on web and mobile application development. Highly proficient in JavaScript (React, Next.js, Node.js, and TypeScript), Java (Spring Boot), and .NET Core, with a proven track record of successfully managing complex projects and integrating diverse APIs.
           </p>
         </ScrollAnimation>
         <ScrollAnimation animateIn="fadeInLeft" delay={0.2 * 1000} style={{ marginTop: "2rem", marginBottom: "2rem" }}>
           <p>
-            Experienced in database management with systems like MySQL, MongoDB, and DynamoDB, and proficient in utilizing AWS cloud services. Expertise in microservice architecture and system integration highlights strong technical and problem-solving capabilities.
+          Experienced in working with cloud platforms, including AWS and Azure, leveraging services such as Azure Functions, Azure App Services, and Azure Resource Management to build scalable, secure, and reliable applications. Adept in database management using MySQL, MongoDB, and DynamoDB, with deep understanding of microservice architecture and system integration.
           </p>
         </ScrollAnimation>
         <ScrollAnimation animateIn="fadeInLeft" delay={0.3 * 1000}>
           <p>
-            Dedicated to ongoing professional growth, I am passionate about embracing new challenges and working collaboratively within dynamic teams to achieve impactful outcomes in the tech industry.
+            My expertise highlights strong technical acumen and problem-solving capabilities. Dedicated to continuous learning and professional growth, I am passionate about embracing new technologies and working collaboratively in dynamic, fast-paced environments to deliver impactful and high-quality solutions.
           </p>
         </ScrollAnimation>
         <ScrollAnimation animateIn="fadeInLeft" delay={0.4 * 1000}>
