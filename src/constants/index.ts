@@ -1,8 +1,8 @@
-
 import sliit from "../assets/company/sliit.png";
 import school from "../assets/company/school.png";
 import tecciance from "../assets/company/tecciance.png";
 import acentura from "../assets/company/acentura.png";
+import addovation from "../assets/company/addovation.png";
 import digiratina from "../assets/company/digiratina.png";
 import soniclabs from "../assets/company/soniclabs.jpg";
 
@@ -13,37 +13,41 @@ import SeConsultantsImage3 from "../assets/projects/sec3.png";
 import SeConsultantsImage4 from "../assets/projects/sec4.png";
 import SeConsultantsImage5 from "../assets/projects/sec5.png";
 
-import trainManagementImage1 from "../assets/projects/train1.png"
-import trainManagementImage2 from "../assets/projects/train2.png"
-import trainManagementImage3 from "../assets/projects/train3.png"
-import trainManagementImage4 from "../assets/projects/train4.png"
-import trainManagementImage5 from "../assets/projects/train5.png"
-import niroggiImage from "../assets/projects/niroggi.png"
-import faceRecognizerImage from "../assets/projects/faceRecognizer.png"
-import ReactCourseProject1Img1 from "../assets/projects/ReactCoursePR1IMG1.png"
-import ReactCourseProject1Img2 from "../assets/projects/ReactCoursePR1IMG2.png"
+import trainManagementImage1 from "../assets/projects/train1.png";
+import trainManagementImage2 from "../assets/projects/train2.png";
+import trainManagementImage3 from "../assets/projects/train3.png";
+import trainManagementImage4 from "../assets/projects/train4.png";
+import trainManagementImage5 from "../assets/projects/train5.png";
+import niroggiImage from "../assets/projects/niroggi.png";
+import faceRecognizerImage from "../assets/projects/faceRecognizer.png";
+import ReactCourseProject1Img1 from "../assets/projects/ReactCoursePR1IMG1.png";
+import ReactCourseProject1Img2 from "../assets/projects/ReactCoursePR1IMG2.png";
 
-import ReactCourseProject2Img1 from "../assets/projects/ReactCourseProject2Img1.png"
-import ReactCourseProject2Img2 from "../assets/projects/ReactCourseProject2Img2.png"
-import ReactCourseProject2Img3 from "../assets/projects/ReactCourseProject2Img3.png"
-import ReactCourseProject2Img4 from "../assets/projects/ReactCourseProject2Img4.png"
-import ReactCourseProject6Img1 from "../assets/projects/ReactCoursePR6IMG1.png"
-import ReactCourseProject6Img2 from "../assets/projects/ReactCoursePR6IMG2.png"
-import defaltImage from "../assets/projects/default.jpg"
+import ReactCourseProject2Img1 from "../assets/projects/ReactCourseProject2Img1.png";
+import ReactCourseProject2Img2 from "../assets/projects/ReactCourseProject2Img2.png";
+import ReactCourseProject2Img3 from "../assets/projects/ReactCourseProject2Img3.png";
+import ReactCourseProject2Img4 from "../assets/projects/ReactCourseProject2Img4.png";
+import ReactCourseProject6Img1 from "../assets/projects/ReactCoursePR6IMG1.png";
+import ReactCourseProject6Img2 from "../assets/projects/ReactCoursePR6IMG2.png";
+import defaltImage from "../assets/projects/default.jpg";
+import capexImage1 from "../assets/projects/capex.png";
+import capexImage2 from "../assets/projects/capex2.png";
+import capexImage3 from "../assets/projects/capex3.png";
+import capexImage4 from "../assets/projects/capex4.png";
+import capexImage5 from "../assets/projects/capex5.png";
 
- const education = [
+const education = [
   {
-    degree: "BSc (Hons) in Information Technology Specialising in Software Engineering",
+    degree:
+      "BSc (Hons) in Information Technology Specialising in Software Engineering",
     institution: "Sri Lanka Institute of Information Technology, Malabe",
     date: "2020 - 2024",
-    icon: sliit,   
-    points: [
-      "Graduated with honors.",
-      "Specialized in Software Engineering.",
-    ],
+    icon: sliit,
+    points: ["Graduated with honors.", "Specialized in Software Engineering."],
   },
   {
-    degree: "G.C.E. Advanced Level - Dudley Senanayake Central College, Tholangamuwa  ",
+    degree:
+      "G.C.E. Advanced Level - Dudley Senanayake Central College, Tholangamuwa  ",
     institution: " Z-Score - 0.7844 ",
     date: "2011 - 2018",
     icon: school,
@@ -57,6 +61,21 @@ import defaltImage from "../assets/projects/default.jpg"
 ];
 
 const experiences = [
+  {
+    title: "Software Engineer — Addovation",
+    company_name: "Addovation",
+    icon: addovation,
+    iconBg: "#383E56",
+    date: "July 2025 – Present",
+    points: [
+      "Contributed to wrapping the IFS Document Management System and building Microsoft Office add-ins for Word, Excel, PowerPoint, and Outlook.",
+      "Developed scalable front-end modules using React, Redux Toolkit, and Fluent UI, with seamless Office integration.",
+      "Engineered secure backend services in .NET Core, adhering to clean architecture principles.",
+      "Integrated Microsoft Graph API, IFS APIs, and Azure AD SSO for secure document management and authentication.",
+      "Managed large-file streaming, Cosmos DB data storage, and multi-tenant Azure deployments.",
+      "Key Tech: React, .NET Core, Azure Functions, Cosmos DB, Microsoft Graph, Fluent UI",
+    ],
+  },
   {
     title: "Software Engineer",
     company_name: "Sonic Labs",
@@ -72,7 +91,7 @@ const experiences = [
       "Led project planning sessions and requirement discussions with clients.",
       "Handled project handovers and mentored maintenance teams for smooth transitions.",
       "Participated actively in client meetings, ensuring alignment with deadlines and expectations.",
-      "Utilized Azure Functions for scalable background processing and event-driven operations."
+      "Utilized Azure Functions for scalable background processing and event-driven operations.",
     ],
   },
   {
@@ -89,7 +108,7 @@ const experiences = [
       "Automated data analysis processes using Python scripts.",
       "Leveraged AI and machine learning tools to analyze data and improve user experience.",
       "Ensured seamless user authentication through integration with Keycloak.",
-      "Enhanced user interface and experience by creating responsive and interactive UIs."
+      "Enhanced user interface and experience by creating responsive and interactive UIs.",
     ],
   },
   {
@@ -103,7 +122,7 @@ const experiences = [
       "Developed comprehensive trip request management features.",
       "Ensured real-time notifications and role-based task access for users.",
       "Led a team in applying best practices, coding standards, and meeting client requirements.",
-      "Mentored junior developers, fostering their growth and ensuring project success."
+      "Mentored junior developers, fostering their growth and ensuring project success.",
     ],
   },
   {
@@ -119,7 +138,7 @@ const experiences = [
       "Developed mobile-responsive web pages, ensuring an optimal user experience.",
       "Developed APIs to support new features and improve application performance.",
       "Collaborated closely with the client’s QA team to resolve issues efficiently.",
-      "Delivered a mobile-responsive office website with enhanced functionalities."
+      "Delivered a mobile-responsive office website with enhanced functionalities.",
     ],
   },
 ];
@@ -151,17 +170,34 @@ const testimonials = [
   },
 ];
 
- // make sure you have corresponding images for each project
+// make sure you have corresponding images for each project
 
- const projects = [
+const projects = [
+  {
+    title: "Capex",
+    description:
+      "Capital expenditure tracking web app with a modern TypeScript frontend.",
+    tags: ["TypeScript", "React"],
+    githubLink: "https://github.com/Capex-Org/Capex",
+    liveLink: "https://capex-xi.vercel.app/",
+    Category: "Side Project",
+    images: [capexImage1, capexImage2, capexImage3, capexImage4, capexImage5],
+  },
   {
     title: "SE Consultants",
-    description: "Developed a web application for managing employees and projects, featuring role-based access controls, project tracking, and reporting functionalities, designed to enhance team productivity and streamline project management.",
+    description:
+      "Developed a web application for managing employees and projects, featuring role-based access controls, project tracking, and reporting functionalities, designed to enhance team productivity and streamline project management.",
     tags: ["React", "Node.js", "MongoDB"],
     githubLink: "https://github.com/SECLK-ORG/SECLK-Front-End",
     liveLink: "https://seclk.up.railway.app/",
-    Category:"FreeLance Project",
-    images: [SeConsultantsImage1, SeConsultantsImage2, SeConsultantsImage3,SeConsultantsImage4,SeConsultantsImage5] 
+    Category: "FreeLance Project",
+    images: [
+      SeConsultantsImage1,
+      SeConsultantsImage2,
+      SeConsultantsImage3,
+      SeConsultantsImage4,
+      SeConsultantsImage5,
+    ],
   },
   {
     title: "Tic-Tac-Toe Game",
@@ -171,8 +207,13 @@ const testimonials = [
     githubLink: "https://github.com/IT20642914/React-course-pr2.git",
     liveLink: "https://react-course-pr2.vercel.app/",
     Category: "React Course Project",
-    images: [ReactCourseProject2Img1, ReactCourseProject2Img2,ReactCourseProject2Img3,ReactCourseProject2Img4], 
-},
+    images: [
+      ReactCourseProject2Img1,
+      ReactCourseProject2Img2,
+      ReactCourseProject2Img3,
+      ReactCourseProject2Img4,
+    ],
+  },
   {
     title: "React Quiz App",
     description:
@@ -181,7 +222,7 @@ const testimonials = [
     githubLink: "https://github.com/IT20642914/React-course-pr6",
     liveLink: "https://react-course-pr6.vercel.app/",
     Category: "React Course Project",
-    images: [ReactCourseProject6Img1, ReactCourseProject6Img2, ], 
+    images: [ReactCourseProject6Img1, ReactCourseProject6Img2],
   },
   {
     title: "React Essentials Website",
@@ -197,26 +238,60 @@ const testimonials = [
     title: "Train Ticket Management System",
     description:
       "Online train ticket booking system that allows users to book tickets via a mobile application. The project also included a web application for managing bookings and train schedules.",
-    tags: ["ASP.NET", "MongoDB", "React", "TypeScript", "JWT", "Figma", "GitHub", "Azure"],
+    tags: [
+      "ASP.NET",
+      "MongoDB",
+      "React",
+      "TypeScript",
+      "JWT",
+      "Figma",
+      "GitHub",
+      "Azure",
+    ],
     githubLink: "https://github.com/IT20642914/EAD_WEB",
     Category: "University Project",
-    images: [trainManagementImage1, trainManagementImage2, trainManagementImage3, trainManagementImage4, trainManagementImage5]
+    images: [
+      trainManagementImage1,
+      trainManagementImage2,
+      trainManagementImage3,
+      trainManagementImage4,
+      trainManagementImage5,
+    ],
   },
   {
     title: "Niroggi",
     description:
       "A child healthcare application that facilitates interviews with parents, coaches, and children to provide instructions and guidance, integrating various technologies to analyze interviews and verify that meetings adhere to company policies.",
-    tags: ["Node.js", "AWS S3", "Microservices Architecture", "AWS Comprehend", "TypeScript", "MySQL", "JavaScript", "Python", "OpenAI", "Microsoft DB", "Zoom APIs"],
+    tags: [
+      "Node.js",
+      "AWS S3",
+      "Microservices Architecture",
+      "AWS Comprehend",
+      "TypeScript",
+      "MySQL",
+      "JavaScript",
+      "Python",
+      "OpenAI",
+      "Microsoft DB",
+      "Zoom APIs",
+    ],
     Category: "Company Project",
-    images: [niroggiImage]
+    images: [niroggiImage],
   },
-    {
-      title: "Viu Subscription",
-      description:
-        "Viu is a TV channel streaming application where we were involved in backend implementation using microservices architecture. We implemented 5 microservices using Spring Boot, ensuring efficient and scalable performance. The project also involved using AWS SQS for handling messaging services, MongoDB for storing unstructured data, and MySQL for managing relational data.",
-      tags: ["Java Spring Boot", "AWS SQS", "MongoDB", "MySQL", "Microservices Architecture", "GitLab"],
-      Category: "Company Project",
-      images: [defaltImage]
+  {
+    title: "Viu Subscription",
+    description:
+      "Viu is a TV channel streaming application where we were involved in backend implementation using microservices architecture. We implemented 5 microservices using Spring Boot, ensuring efficient and scalable performance. The project also involved using AWS SQS for handling messaging services, MongoDB for storing unstructured data, and MySQL for managing relational data.",
+    tags: [
+      "Java Spring Boot",
+      "AWS SQS",
+      "MongoDB",
+      "MySQL",
+      "Microservices Architecture",
+      "GitLab",
+    ],
+    Category: "Company Project",
+    images: [defaltImage],
   },
   {
     title: "Central Number Pool",
@@ -224,7 +299,7 @@ const testimonials = [
       "A backend service that includes number generation and search services, as well as a scheduler. The number generation service creates a range of numbers based on requirements, which can then be moved from the pre-pool to the live pool.",
     tags: ["Java", "Spring Boot", "DynamoDB"],
     Category: "Company Project",
-    images: [defaltImage]
+    images: [defaltImage],
   },
   {
     title: "Transportation Web Application",
@@ -232,21 +307,31 @@ const testimonials = [
       "A transportation application for MAS that manages transportation across the company, including tracking and optimizing bookings. It handles transportation requests from employees and manages them through various roles within the MAS system.",
     tags: ["React", "TypeScript", "Redux", "Material UI", "React Saga"],
     Category: "Company Project",
-    images: [masTransportation]
+    images: [masTransportation],
   },
   {
     title: "FaceRecognizer And Authenticater",
     description:
       "Developed an AI/ML model for user authentication through facial recognition, using libraries such as DeepFace, OpenCV, and Firebase. The system captured and processed images for real-time user authentication.",
-    tags: ["Python", "DeepFace", "OpenCV", "Firebase", "Flask", "pandas", "pyttsx3", "threading", "requests", "numpy"],
+    tags: [
+      "Python",
+      "DeepFace",
+      "OpenCV",
+      "Firebase",
+      "Flask",
+      "pandas",
+      "pyttsx3",
+      "threading",
+      "requests",
+      "numpy",
+    ],
     githubLink: "https://github.com/IT20642914/FaceRecognizerAndAuthenticater",
     Category: "University Project",
-    images: [faceRecognizerImage]
+    images: [faceRecognizerImage],
   },
 ];
 
-
- const certifications = [
+const certifications = [
   {
     name: "Frontend Developer (React)",
     issuer: "HackerRank",
@@ -259,7 +344,8 @@ const testimonials = [
     name: "Java (Basic)",
     issuer: "HackerRank",
     date: "2023-NOV-30",
-    description: "It covers basic topics in Java language such as data structures, inheritance, exception handling.",
+    description:
+      "It covers basic topics in Java language such as data structures, inheritance, exception handling.",
     link: "https://www.hackerrank.com/certificates/2c4c1c7186a2",
     image: [], // replace with the actual path or link to the certificate image
   },
@@ -273,6 +359,4 @@ const testimonials = [
   },
 ];
 
-
-
-export { education,experiences,projects, certifications,testimonials,  };
+export { education, experiences, projects, certifications, testimonials };

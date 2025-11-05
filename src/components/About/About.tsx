@@ -29,7 +29,6 @@ import pythonIcon from "../../assets/python.svg";
 import NetCore from "../../assets/NETcore.svg";
 import Azure from "../../assets/Azure.svg";
 
-
 import ScrollAnimation from "react-animate-on-scroll";
 
 const frontendSkills = [
@@ -40,7 +39,7 @@ const frontendSkills = [
   { src: vueIcon, alt: "Vue" },
   { src: htmlIcon, alt: "HTML" },
   { src: cssIcon, alt: "CSS" },
-  { src: sassIcon, alt: "Sass" }
+  { src: sassIcon, alt: "Sass" },
 ];
 
 const backendSkills = [
@@ -49,14 +48,14 @@ const backendSkills = [
   { src: java, alt: "Java" },
   { src: springBootIcon, alt: "Spring Boot" },
   { src: pythonIcon, alt: "Python" },
-  { src: NetCore, alt: "NET Core" }
+  { src: NetCore, alt: "NET Core" },
 ];
 
 const databaseSkills = [
   { src: mongoIcon, alt: "MongoDB" },
   { src: mysqlIcon, alt: "MySQL" },
   { src: dynamoDbIcon, alt: "DynamoDB" },
-  { src: firebaseIcon, alt: "Firebase" }
+  { src: firebaseIcon, alt: "Firebase" },
 ];
 
 const toolsSkills = [
@@ -67,25 +66,22 @@ const toolsSkills = [
   { src: dockerIcon, alt: "Docker" },
   { src: kubernetesIcon, alt: "Kubernetes" },
   { src: jenkinsIcon, alt: "Jenkins" },
-  { src: Azure, alt: "Azure" }
-
-  
+  { src: Azure, alt: "Azure" },
 ];
 
-const createSkillElements = (skills: any[], delayOffset: number) => (
+const createSkillElements = (skills: any[], delayOffset: number) =>
   skills.map((skill, index) => (
     <ScrollAnimation
       key={index}
       animateIn="fadeInUp"
       animateOut="fadeOutDown"
-      delay={(delayOffset + index * 100) *1} 
+      delay={(delayOffset + index * 100) * 1}
     >
       <div className="hability">
         <img src={skill.src} alt={skill.alt} />
       </div>
     </ScrollAnimation>
-  ))
-);
+  ));
 
 export function About() {
   return (
@@ -96,17 +92,35 @@ export function About() {
         </ScrollAnimation>
         <ScrollAnimation animateIn="fadeInLeft" delay={0.1 * 1000}>
           <p>
-          Innovative and skilled Software Engineer with a solid foundation in information technology and a strong focus on web and mobile application development. Highly proficient in JavaScript (React, Next.js, Node.js, and TypeScript), Java (Spring Boot), and .NET Core, with a proven track record of successfully managing complex projects and integrating diverse APIs.
+            Full-stack Software Engineer with over 3 years of hands-on
+            experience designing and building scalable web and mobile
+            applications using <strong>React</strong>, <strong>Node.js</strong>,
+            <strong> TypeScript</strong>, <strong>.NET Core</strong>, and
+            <strong> Spring Boot</strong>.
           </p>
         </ScrollAnimation>
-        <ScrollAnimation animateIn="fadeInLeft" delay={0.2 * 1000} style={{ marginTop: "2rem", marginBottom: "2rem" }}>
+        <ScrollAnimation animateIn="fadeInLeft" delay={0.2 * 1000}>
           <p>
-          Experienced in working with cloud platforms, including AWS and Azure, leveraging services such as Azure Functions, Azure App Services, and Azure Resource Management to build scalable, secure, and reliable applications. Adept in database management using MySQL, MongoDB, and DynamoDB, with deep understanding of microservice architecture and system integration.
+            Experienced in integrating complex systems, third-party APIs, and
+            enterprise workflows across <strong>Azure</strong>,{" "}
+            <strong>AWS</strong>, and <strong>Google Cloud</strong>{" "}
+            environments. Strong background in
+            <strong> microservices</strong>,{" "}
+            <strong>Microsoft Graph API</strong>, and <strong>OAuth 2.0</strong>
+            .
           </p>
         </ScrollAnimation>
         <ScrollAnimation animateIn="fadeInLeft" delay={0.3 * 1000}>
           <p>
-            My expertise highlights strong technical acumen and problem-solving capabilities. Dedicated to continuous learning and professional growth, I am passionate about embracing new technologies and working collaboratively in dynamic, fast-paced environments to deliver impactful and high-quality solutions.
+            Database management across <strong>MySQL</strong>,{" "}
+            <strong>MongoDB</strong>,<strong> DynamoDB</strong>, and{" "}
+            <strong>Cosmos DB</strong>. Adept at crafting secure,
+            high-performance solutions with a focus on
+            <strong> clean architecture</strong>,{" "}
+            <strong>UI/UX excellence</strong>, and innovation-driven
+            development. Passionate about solving complex problems and
+            collaborating across teams to deliver impactful, production-ready
+            solutions.
           </p>
         </ScrollAnimation>
         <ScrollAnimation animateIn="fadeInLeft" delay={0.4 * 1000}>
@@ -155,7 +169,7 @@ export function About() {
       </div>
 
       <div className="about-image">
-        <ScrollAnimation animateIn="fadeInRight" delay={0.20 * 1000}>
+        <ScrollAnimation animateIn="fadeInRight" delay={0.2 * 1000}>
           <img src={AvishkaChanaka} alt="Avishka Chanaka" />
         </ScrollAnimation>
       </div>
