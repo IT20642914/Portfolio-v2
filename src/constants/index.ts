@@ -35,6 +35,13 @@ import capexImage2 from "../assets/projects/capex2.png";
 import capexImage3 from "../assets/projects/capex3.png";
 import capexImage4 from "../assets/projects/capex4.png";
 import capexImage5 from "../assets/projects/capex5.png";
+import bbPortal1 from "../assets/projects/bbPortal1.png";
+import bbPortal2 from "../assets/projects/bbPortal2.png";
+import bbPortal3 from "../assets/projects/bbPortal3.png";
+import bbPortal4 from "../assets/projects/bbPortal4.png";
+import bbPortal5 from "../assets/projects/bbPortal5.png";
+import cc51 from "../assets/projects/cc51.png";
+import cc52 from "../assets/projects/cc52.png";
 
 const education = [
   {
@@ -176,13 +183,53 @@ const projects = [
   {
     title: "Capex",
     description:
-      "Capital expenditure tracking web app with a modern TypeScript frontend.",
+      "Capital expenditure management web application for the CAPEX company. Enables users, agents, and administrators to request, review, and approve building/architectural modifications and new additions. Provides role-based workflows, versioned change requests, attachments, audit trails, and a modern TypeScript frontend.",
     tags: ["TypeScript", "React"],
     githubLink: "https://github.com/Capex-Org/Capex",
     liveLink: "https://capex-xi.vercel.app/",
     Category: "Side Project",
     images: [capexImage1, capexImage2, capexImage3, capexImage4, capexImage5],
   },
+  {
+    title: "BroadBand Portal (UK Project)",
+    description:
+      "Web-based network management portal for UK broadband providers. Multi-tenant with delegated admin, real-time dashboards for DNS, firewall, VPN, SSO via Google/RM/Azure AD, Graylog analytics, Superset visualizations, Azure Pipelines/Boards. Impact: >40% latency reduction and faster admin onboarding.",
+    tags: [
+      ".NET Core",
+      "React",
+      "TypeScript",
+      "shadcn/ui",
+      "Tailwind CSS",
+      "SQL Server",
+      "Azure CI/CD",
+      "Azure Boards",
+      "Graylog",
+      "Apache Superset",
+    ],
+    Category: "Company Project — Sonic Labs",
+    liveLink: "https://www.broadbandportal.co.uk/",
+    images: [bbPortal1, bbPortal2, bbPortal3, bbPortal4, bbPortal5],
+  },
+  {
+    title: "RM Community Connect (CC5) (UK Project)",
+    description:
+      "Multi-tenant admin portal for UK school network and license management, modernizing RM CC5. Graph API sync with Azure AD, Teams, Intune; automated license assignment with Entra ID/Intune; RBAC and policy auth; Azure CI/CD and Boards. Impact: ~60% reduction in manual license ops, serving 10k+ end users.",
+    tags: [
+      ".NET Core",
+      "React",
+      "TypeScript",
+      "Microsoft Graph API",
+      "Azure Services",
+      "Microsoft Intune",
+      "Microsoft Entra ID",
+      "SQL Server",
+      "Azure Boards",
+    ],
+    liveLink: "https://www.rm.com/community-connect-5",
+    Category: "Company Project — Sonic Labs",
+    images: [cc51, cc52],
+  },
+
   {
     title: "SE Consultants",
     description:
@@ -197,6 +244,30 @@ const projects = [
       SeConsultantsImage3,
       SeConsultantsImage4,
       SeConsultantsImage5,
+    ],
+  },
+  {
+    title: "Train Ticket Management System",
+    description:
+      "Online train ticket booking system that allows users to book tickets via a mobile application. The project also included a web application for managing bookings and train schedules.",
+    tags: [
+      "ASP.NET",
+      "MongoDB",
+      "React",
+      "TypeScript",
+      "JWT",
+      "Figma",
+      "GitHub",
+      "Azure",
+    ],
+    githubLink: "https://github.com/IT20642914/EAD_WEB",
+    Category: "University Project",
+    images: [
+      trainManagementImage1,
+      trainManagementImage2,
+      trainManagementImage3,
+      trainManagementImage4,
+      trainManagementImage5,
     ],
   },
   {
@@ -234,30 +305,7 @@ const projects = [
     Category: "React Course Project ",
     images: [ReactCourseProject1Img1, ReactCourseProject1Img2],
   },
-  {
-    title: "Train Ticket Management System",
-    description:
-      "Online train ticket booking system that allows users to book tickets via a mobile application. The project also included a web application for managing bookings and train schedules.",
-    tags: [
-      "ASP.NET",
-      "MongoDB",
-      "React",
-      "TypeScript",
-      "JWT",
-      "Figma",
-      "GitHub",
-      "Azure",
-    ],
-    githubLink: "https://github.com/IT20642914/EAD_WEB",
-    Category: "University Project",
-    images: [
-      trainManagementImage1,
-      trainManagementImage2,
-      trainManagementImage3,
-      trainManagementImage4,
-      trainManagementImage5,
-    ],
-  },
+
   {
     title: "Niroggi",
     description:
@@ -275,7 +323,7 @@ const projects = [
       "Microsoft DB",
       "Zoom APIs",
     ],
-    Category: "Company Project",
+    Category: "Company Project — Tecciance",
     images: [niroggiImage],
   },
   {
@@ -290,7 +338,7 @@ const projects = [
       "Microservices Architecture",
       "GitLab",
     ],
-    Category: "Company Project",
+    Category: "Company Project - Tecciance",
     images: [defaltImage],
   },
   {
@@ -298,7 +346,7 @@ const projects = [
     description:
       "A backend service that includes number generation and search services, as well as a scheduler. The number generation service creates a range of numbers based on requirements, which can then be moved from the pre-pool to the live pool.",
     tags: ["Java", "Spring Boot", "DynamoDB"],
-    Category: "Company Project",
+    Category: "Company Project — Tecciance / Digiratina",
     images: [defaltImage],
   },
   {
@@ -306,7 +354,7 @@ const projects = [
     description:
       "A transportation application for MAS that manages transportation across the company, including tracking and optimizing bookings. It handles transportation requests from employees and manages them through various roles within the MAS system.",
     tags: ["React", "TypeScript", "Redux", "Material UI", "React Saga"],
-    Category: "Company Project",
+    Category: "Company Project — Acentura Inc",
     images: [masTransportation],
   },
   {
