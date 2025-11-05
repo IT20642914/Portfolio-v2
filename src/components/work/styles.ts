@@ -67,6 +67,46 @@ export const Container = styled.section`
   /* Adding margin to VerticalTimelineElement */
   .vertical-timeline-element {
     margin-bottom: 2rem; /* Space between timeline elements */
+    /* Glass card look for timeline content */
+    .vertical-timeline-element-content {
+      background: rgba(43, 43, 43, 0.6) !important;
+      border: 1px solid rgba(255, 255, 255, 0.06) !important;
+      border-radius: 1.2rem !important;
+      backdrop-filter: blur(8px);
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.35) !important;
+      transition: transform 0.25s, box-shadow 0.25s, border-color 0.25s;
+    }
+
+    .vertical-timeline-element-content:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 8px 28px rgba(0, 0, 0, 0.5) !important;
+      border-color: var(--pink) !important;
+    }
+
+    .vertical-timeline-element-content-arrow {
+      border-right: 8px solid rgba(255, 255, 255, 0.12) !important;
+    }
+  }
+
+  /* Light mode variants */
+  .light & {
+    .vertical-timeline-element {
+      .vertical-timeline-element-content {
+        background: rgba(255, 255, 255, 0.7) !important;
+        border: 1px solid rgba(0, 0, 0, 0.06) !important;
+        color: var(--black) !important;
+
+        p,
+        span,
+        li {
+          color: var(--black) !important;
+        }
+      }
+
+      .vertical-timeline-element-content-arrow {
+        border-right: 8px solid rgba(0, 0, 0, 0.12) !important;
+      }
+    }
   }
 
   @media (max-width: 768px) {

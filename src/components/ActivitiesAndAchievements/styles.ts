@@ -49,21 +49,41 @@ export const Container = styled.section`
     .swiper-pagination-bullet {
       background-color: var(--green);
     }
+
+    .swiper-pagination-bullet-active {
+      background-color: var(--pink);
+    }
   }
 
   .certificate-item {
     padding: 1rem;
-    background-color: #2b2b2b;
-    border-radius: 0.8rem;
+    background: rgba(43, 43, 43, 0.6);
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    border-radius: 1.2rem;
     display: flex;
     justify-content: center;
     align-items: center;
+    backdrop-filter: blur(8px);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.35);
+    transition: transform 0.25s, box-shadow 0.25s, border-color 0.25s;
+
+    &:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 8px 28px rgba(0, 0, 0, 0.5);
+      border-color: var(--pink);
+    }
 
     img {
-      max-width: 100%;
+      width: 100%;
       max-height: 45rem;
       height: auto;
-      border-radius: 0.5rem;
+      object-fit: contain;
+      border-radius: 0.8rem;
+      transition: transform 0.3s ease;
+    }
+
+    &:hover img {
+      transform: scale(1.03);
     }
   }
 `;

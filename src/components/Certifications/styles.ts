@@ -18,7 +18,8 @@ export const Container = styled.section`
 
   .certification {
     padding: 2rem;
-    background-color: #2b2b2b;
+    background: rgba(43, 43, 43, 0.6);
+    border: 1px solid rgba(255, 255, 255, 0.06);
     border-radius: 1.2rem;
     color: #fff;
     text-align: center;
@@ -27,9 +28,18 @@ export const Container = styled.section`
     justify-content: space-between; /* Ensure even distribution of content */
     min-height: 400px; /* Set a minimum height to make all cards uniform */
     max-height: 100%; /* Ensure they don’t exceed the grid layout */
-    
+    backdrop-filter: blur(8px);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.35);
+    transition: 0.25s;
+
     /* Responsive sizing */
     height: 100%; /* Allow cards to grow and be consistent */
+
+    &:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 8px 28px rgba(0, 0, 0, 0.5);
+      border-color: var(--pink);
+    }
     
     .cert-name {
       font-size: 2.5rem;
@@ -65,16 +75,17 @@ export const Container = styled.section`
       margin-top: auto; /* Push the button to the bottom */
       
       .view-button {
-        background-color: #4caf50;
-        color: white;
+        background: transparent;
+        color: #fff;
         padding: 0.5rem 1rem;
-        border: none;
+        border: 1px solid rgba(255, 255, 255, 0.2);
         border-radius: 0.5rem;
         cursor: pointer;
-        transition: background-color 0.25s;
+        transition: color 0.25s, border-color 0.25s;
 
         &:hover {
-          background-color: #45a049;
+          color: #fff;
+          border-color: rgba(255, 255, 255, 0.8);
         }
       }
     }
@@ -93,7 +104,7 @@ export const Container = styled.section`
     align-items: center;
 
     .modal-content {
-      background-color: rgba(99,99, 99, 0.6);
+      background-color: rgba(0, 0, 0, 0.8);
       padding: 2rem;
       border-radius: 0.5rem;
       max-width: 600px;
@@ -119,13 +130,18 @@ export const Container = styled.section`
         margin-top: 2rem;
         display: inline-flex;
         align-items: center;
-        color: #4caf50;
+        color: #fff;
         font-weight: bold;
         text-decoration: none;
         font-size: 1.2rem;
+        padding: 0.5rem 1rem;
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        border-radius: 0.5rem;
+        transition: color 0.25s, border-color 0.25s;
 
         &:hover {
-          text-decoration: underline;
+          color: #fff;
+          border-color: rgba(255, 255, 255, 0.8);
         }
 
         svg {

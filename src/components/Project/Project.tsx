@@ -46,7 +46,10 @@ export function Project() {
   };
 
   // Function to open modal
-  const handleOpenModal = (image: SetStateAction<string>, index: SetStateAction<number>) => {
+  const handleOpenModal = (
+    image: SetStateAction<string>,
+    index: SetStateAction<number>
+  ) => {
     setModalImage(image);
     setModalProjectIndex(index);
     setIsModalOpen(true);
@@ -74,7 +77,8 @@ export function Project() {
   // Function to handle previous image in modal
   const handlePrevImageModal = () => {
     const prevIndex =
-      (currentImageIndex[modalProjectIndex] - 1 +
+      (currentImageIndex[modalProjectIndex] -
+        1 +
         projects[modalProjectIndex].images.length) %
       projects[modalProjectIndex].images.length;
     setCurrentImageIndex((prev) =>
@@ -90,7 +94,7 @@ export function Project() {
 
   return (
     <Container id="project">
-      <h2>My Projects</h2>
+      <h2>Projects & Contributions</h2>
       <div className="projects">
         {displayedProjects.map((project, index) => (
           <ScrollAnimation
@@ -123,6 +127,9 @@ export function Project() {
                 src={project.images[currentImageIndex[index]]}
                 alt={project.title}
               />
+              {project.Category && (
+                <span className="category-pill">{project.Category}</span>
+              )}
               <div className="image-controls">
                 <button onClick={() => handlePrevImage(index)}>Prev</button>
                 <button
